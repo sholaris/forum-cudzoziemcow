@@ -1,0 +1,17 @@
+h2.err-msg {
+  font-size: 20px;
+  background-color: rgb(224, 49, 49);
+  text-align: left;
+  color: white;
+  font-weight: 300;
+  padding: 10px;
+  margin: 0;
+  display: none;
+}
+h2.err-msg a {
+  color: white;
+  text-decoration: underline;
+}
+h2.err-msg.active {
+  display: block;
+}

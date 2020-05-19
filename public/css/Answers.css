@@ -1,0 +1,57 @@
+.answers-list-container h2 {
+  background-color: #27ae60;
+  color: white;
+  padding: 10px 10px 10px 20px;
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+.answer-item {
+  padding: 20px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  position: relative;
+  min-height: 190px;
+  overflow: hidden;
+}
+.answer-main {
+  float: left;
+  margin: 0 0 0 20px;
+  width: 80%;
+}
+.answer-content {
+  position: relative;
+}
+.answer-content ul {
+  margin-left: 20px;
+}
+.answer-content ul > li {
+  list-style-type: disc;
+}
+.answer-buttons {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #dee1e3;
+}
+.answer-buttons .btn.comment {
+  font-size: 10px;
+}
+.answer-buttons .btn.comment .fa-comment-dots {
+  height: 20px;
+  width: 15px;
+  margin-right: 3px;
+}
+.answer-comment-form {
+  display: none;
+}
+.answer-comment-form h2 {
+  color: #445f7a;
+  font-size: 1.5rem;
+  background-color: transparent;
+}
+.answer-comment-form .row {
+  margin: 10px 0 !important;
+}
+.login-msg-answer-comment {
+  display: none;
+  margin-top: 10px;
+}

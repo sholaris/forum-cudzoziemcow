@@ -1,0 +1,56 @@
+.form-container .row {
+  padding: 10px 30px;
+}
+.form-container p {
+  width: 70%;
+  text-align: justify;
+}
+.form-container .row.heading {
+  color: rgb(141, 133, 133);
+}
+h2.reg-heading {
+  margin: 30px 0 15px 0;
+}
+p.agreement {
+  width: 100%;
+}
+p.agreement span {
+  color: black;
+}
+.form-container p.agreement-desc {
+  width: 100% !important;
+}
+.form-container form .row {
+  margin: 10px 0;
+}
+.form-container form .row .col {
+  padding: 0;
+}
+.form-container form .row:nth-last-child(2) {
+  margin: 40px 0;
+}
+
+[type="checkbox"].filled-in:checked + span:not(.lever)::after {
+  background-color: #3949ab;
+  border: 2px solid #3949ab;
+}
+
+.input-error {
+  border-bottom: 2px solid red !important;
+}
+.row.error {
+  margin: 0;
+}
+p.error-msg {
+  font-size: 14px;
+  color: red;
+}
+p.error-heading {
+  display: none;
+  font-weight: 700;
+  text-align: center;
+  background-color: red;
+  color: white;
+  height: 50px;
+  padding-top: 12px;
+}

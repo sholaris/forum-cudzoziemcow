@@ -1,0 +1,61 @@
+.post-stats {
+  float: left;
+}
+.voting {
+  background-color: #ecf0f1;
+  color: #445f7a;
+  width: 68px;
+  height: 60px;
+  line-height: 0.5;
+  float: left;
+}
+.vote-buttons {
+  float: left;
+  height: 60px;
+  width: 20px;
+  position: relative;
+}
+.btn-vote-up {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 16px;
+  height: 30px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.btn-vote-down {
+  bottom: 2px;
+  left: 4px;
+  position: absolute;
+  width: 16px;
+  height: 30px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.fa-caret-up,
+.fa-caret-down {
+  color: #445f7a;
+}
+svg.fa-caret-up path:hover {
+  cursor: pointer;
+  color: #27ae60;
+}
+svg.fa-caret-down path:hover {
+  cursor: pointer;
+  color: #ae4227;
+}
+.voting-counter {
+  display: block;
+  text-align: center;
+}
+.vote-count-data {
+  font-size: 20px;
+  line-height: 40px;
+  display: block;
+}
+.vote-count-label {
+  font-size: 11px;
+}

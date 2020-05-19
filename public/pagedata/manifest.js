@@ -1,0 +1,22 @@
+export const postCategories = {
+  categories: [
+    "Karta pobytu",
+    "Przedłużenie pobytu",
+    "Pobyt stały",
+    "Pobyt czasowy",
+    "Pobyt rezydenta długoterminowego UE",
+    "Pobyt obywatela UE/rodziny obywatel UE",
+    "Pobyt tolerowany",
+    "Pobyt ze względów humanitarnych",
+    "Status uchodźcy",
+    "Wiza",
+    "Studia w Polsce",
+    "Nauka w Polsce",
+    "Naukowiec w Polsce",
+    "Zezwolenie na pracę",
+    "Zaproszenie dla cudzoziemca",
+    "Przeniesienie wewnątrz przedsiębiorstwa",
+    "Pobyt obywatela Wielkiej Brytanii",
+    "Brexit",
+  ],
+};

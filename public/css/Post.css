@@ -1,0 +1,135 @@
+.login-msg-answer {
+  display: none;
+  font-size: 1.6rem;
+  margin-top: 10px;
+  font-weight: 700;
+}
+.login-msg-answer a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.login-msg-comment {
+  display: none;
+  font-size: 1.6rem;
+  margin-top: 30px;
+  font-weight: 700;
+}
+.login-msg-comment a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.success {
+  background-color: #27ae60;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  display: none;
+}
+
+.content {
+  padding: 20px;
+  overflow: hidden;
+  background-color: white;
+}
+.main-post {
+  float: left;
+  margin: 0 0 0 20px;
+  width: 80%;
+}
+input[type="submit"] {
+  cursor: pointer;
+  text-align: center;
+}
+.meta-container {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 20px;
+}
+.meta {
+  padding-bottom: 1px;
+  border-bottom: 1px solid #bdc3c7;
+  display: block;
+}
+form .content {
+  position: relative;
+}
+.entry-content {
+  word-wrap: break-word;
+}
+.tags {
+  margin: 20px 0 20px 0;
+  overflow: hidden;
+}
+.tag-list {
+  display: block;
+  float: left;
+  line-height: 11px;
+  list-style: none !important;
+  margin: 0;
+  padding: 0 !important;
+}
+.tag-item {
+  display: inline;
+}
+.react-buttons {
+  padding-top: 10px;
+  border-top: 1px solid #dee1e3;
+  margin-bottom: 15px;
+}
+.btn.answer,
+.btn.comment {
+  border-radius: 0;
+  width: auto;
+  padding: 0 10px 0 10px;
+  letter-spacing: normal;
+  margin-right: 10px;
+  font-size: 12px;
+  line-height: 30px;
+  text-indent: 0;
+  background-color: #27ae60;
+}
+.btn.comment {
+  background-color: #2c3e50;
+}
+.fa-comment-alt,
+.fa-comment-dots.post-comment {
+  height: 22px;
+  width: 22px;
+  padding-top: 8px;
+}
+
+.comment-form .row {
+  margin: 10px 0 !important;
+}
+
+.answer-form,
+.comment-form {
+  color: #445f7a;
+  display: none;
+}
+.answer-form .row:last-child {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.answer-form h2 {
+  margin-bottom: 20px;
+}
+.comment-form h2 {
+  font-size: 1.5rem;
+}
+.btn.submit-answer,
+.btn.submit-comment {
+  background-color: #27ae60;
+  border-radius: 0;
+  margin-right: 10px;
+  letter-spacing: normal;
+}
+.btn.delete-answer,
+.btn.delete-comment {
+  background-color: #ae4627;
+  border-radius: 0;
+}
+.btn.submit-comment {
+  background-color: rgb(69, 109, 241);
+}

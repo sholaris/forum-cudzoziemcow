@@ -1,0 +1,89 @@
+nav {
+  min-height: 90px;
+}
+nav a:hover {
+  color: white;
+}
+nav .svg-inline--fa {
+  color: var(--navbar-icons);
+  max-height: 40px;
+}
+nav .svg-inline--fa:hover {
+  color: var(--navbar-icons-hover);
+}
+.nav-wrapper {
+  padding: 0 30px;
+}
+.brand-logo {
+  margin-top: 10px;
+  font-size: 1.8rem !important;
+}
+.nav-wrapper ul {
+  position: absolute;
+  right: 35%;
+  padding: 20px 0;
+}
+.nav-wrapper ul li {
+  margin: 0 40px;
+}
+.nav-wrapper ul li a:hover {
+  background: transparent;
+}
+.search-bar {
+  float: right;
+  margin-right: 10px;
+}
+.search-bar input[type="text"] {
+  padding: 6px 35px 6px 15px;
+  max-height: 15px;
+  width: 250px;
+  margin: 0;
+  font-size: 17px;
+  border-radius: 100px;
+  border: none;
+  background-color: white;
+}
+.search-bar button.btn-search {
+  position: absolute;
+  right: 22px;
+  top: 7px;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: transparent;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.search-bar button svg {
+  height: 20px;
+  color: black;
+}
+.search-bar button svg:hover {
+  color: black;
+}
+.logged-out,
+.logged-in {
+  position: absolute;
+  right: 40px;
+  top: 35px;
+}
+.logged-out a:hover,
+.logged-in a:hover {
+  text-decoration: underline;
+}
+a.btn {
+  font-size: 0.7rem;
+  background-color: #3949ab;
+  color: white;
+  border: 1px solid black;
+  margin-left: 10px;
+  padding: 0 5px;
+  height: 30px;
+  line-height: 30px;
+}
+a.btn:hover {
+  cursor: pointer;
+  background-color: #4b5bbd;
+  text-decoration: none;
+}

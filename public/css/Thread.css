@@ -1,0 +1,78 @@
+.thread-container {
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgb(206, 206, 206);
+  overflow: hidden;
+  margin-bottom: 3px;
+}
+.thread-stats {
+  width: 15%;
+  float: left;
+  padding: 5px;
+}
+.votes {
+  display: inline-block;
+  width: calc(50% - 1px);
+  background-color: rgb(190, 194, 245);
+  border: 2px solid rgb(88, 88, 221);
+  text-align: center;
+}
+.votes .number,
+.votes .label {
+  color: rgb(59, 59, 190);
+}
+.answers .number,
+.answers .label {
+  color: rgb(44, 100, 58);
+}
+.answers {
+  float: right;
+  width: calc(50% - 1px);
+  background-color: rgb(141, 238, 165);
+  border: 2px solid rgb(38, 146, 47);
+  text-align: center;
+}
+span.number {
+  font-weight: 700;
+  font-size: 1.4rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+span.label {
+  font-size: 0.9rem;
+  text-align: center;
+}
+.thread-details {
+  width: 85%;
+  float: right;
+  padding: 10px;
+}
+.thread-title {
+  color: rgb(25, 25, 112);
+  margin: 0;
+}
+.details {
+  margin: 5px 0;
+}
+span.thread-review {
+  color: rgb(56, 80, 187);
+  font-weight: 700;
+}
+.tags-container {
+  padding: 5px 0;
+  float: left;
+}
+span.badge.new {
+  margin-left: 0;
+  margin-right: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0 25px;
+  color: rgb(50, 50, 173);
+  background-color: rgb(202, 239, 241);
+}
+.thread-details a:hover {
+  text-decoration: underline;
+}

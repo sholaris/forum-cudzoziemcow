@@ -1,0 +1,33 @@
+:root {
+  --body-color: rgb(212, 212, 212);
+  --navbar-icons: rgb(27, 25, 114);
+  --navbar-icons-hover: rgb(173, 173, 201);
+}
+html,
+body {
+  font-family: "Cardo", serif;
+  min-height: 100%;
+  background-color: var(--body-color);
+}
+body {
+  /* font-family: "Lora", serif; */
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  width: 60%;
+}
+h1 {
+  background-color: rgb(211, 142, 14);
+  padding: 12px;
+  color: rgb(114, 81, 10);
+}
+.hr-separator {
+  background-color: white;
+  height: 10px;
+  margin: 3px 0;
+  border: 1px solid rgb(206, 206, 206);
+}

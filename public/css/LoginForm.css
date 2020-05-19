@@ -1,0 +1,32 @@
+h1 {
+  margin: 30px 0 !important;
+}
+.form-container {
+  background-color: white;
+  max-height: 1000px;
+}
+.form-container .row {
+  margin: 0;
+}
+.form-container form .row {
+  max-width: 70%;
+  margin: 20px 0 0 30px;
+  padding: 0;
+}
+a.remainder {
+  margin-left: 10px;
+}
+a.remainder:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+form .row:last-child {
+  margin-top: 50px;
+}
+.btn {
+  background-color: #3949ab;
+  border-radius: 4px;
+}
+.btn:hover {
+  background-color: #4658cc;
+}

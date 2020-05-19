@@ -1,0 +1,27 @@
+.menu-wrapper {
+  margin-top: 20px;
+  width: 100%;
+  text-align: right;
+}
+.ui.menu {
+  border: 1px solid black;
+}
+
+.ui.menu .item {
+  color: rgb(145, 145, 145);
+}
+.ui.compact.menu {
+  border-radius: 0;
+}
+.ui.menu .item:first-child,
+.ui.menu .item:nth-child(2),
+.ui.menu .item:nth-child(3) {
+  border-right: 1px solid black;
+}
+.ui.menu .item:first-child,
+.ui.compact.menu .item:last-child {
+  border-radius: 0;
+}
+.ui.menu .active.item {
+  background-color: rgb(221, 221, 221);
+}
