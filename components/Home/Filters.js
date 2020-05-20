@@ -1,5 +1,5 @@
 import { Menu } from "semantic-ui-react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
 const Filters = ({ method }) => {
@@ -8,7 +8,6 @@ const Filters = ({ method }) => {
 
   function handleItemClick(e, { name }) {
     setActive({ activeItem: name });
-    // sorting_func(e);
   }
 
   return (
