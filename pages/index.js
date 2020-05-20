@@ -6,36 +6,73 @@ import Separator from "../components/shared/Separator";
 import Wrapper from "../components/shared/Wrapper";
 import firebaseApp from "../firebase/_Init";
 import { convertDate } from "../lib/utils";
-import { useState } from "react";
-// import { useRouter, Router } from "next/router";
+import { useRouter, useState } from "react";
 
-const Home = ({ threads }) => {
-  // const [sort, setSort] = useState({ method: "recent" });
+const Home = ({ threads, sort }) => {
+  const [posts, setPosts] = useState([]);
+  const [search, setSearch] = useState("");
   // const router = useRouter();
+  // const { q } = router.query;
 
-  // function changeSortMethod(e) {
-  //   setSort({ method: e.target.id });
-  // }
+  function handleChange(e) {
+    setSearch(e.target.value);
+  }
+
+  function handleSearch(e) {
+    e.preventDefault();
+    let results = [];
+    threads.data.forEach((post) => {
+      let tags_list = [];
+      for (let key in post.tags) {
+        tags_list.push(post.tags[key]);
+      }
+      search.split(" ").some((word) => {
+        if (tags_list.indexOf(word) != -1) {
+          results.push(post);
+          return true;
+        } else if (post.title.indexOf(word) != -1) {
+          results.push(post);
+          return true;
+        }
+      });
+    });
+    setPosts(results);
+    console.log(results);
+  }
 
   return (
-    <BaseLayout>
+    <BaseLayout handleSearch={handleSearch} handleChange={handleChange}>
       <Wrapper>
-        <Filters />
+        <Filters method={sort} />
         <Header content="Najnowsze pytania i odpowiedzi" />
         <Separator />
-        {threads.data.map((doc) => (
-          <ThreadReview
-            key={doc.id}
-            id={doc.id}
-            tags={doc.tags}
-            votes={doc.votes}
-            answers={doc.answers}
-            title={doc.title}
-            date={doc.date}
-            category={doc.category}
-            author={doc.author}
-          />
-        ))}
+        {posts.length == 0
+          ? threads.data.map((doc) => (
+              <ThreadReview
+                key={doc.id}
+                id={doc.id}
+                tags={doc.tags}
+                votes={doc.votes}
+                answers={doc.answers}
+                title={doc.title}
+                date={doc.date}
+                category={doc.category}
+                author={doc.author}
+              />
+            ))
+          : posts.map((doc) => (
+              <ThreadReview
+                key={doc.id}
+                id={doc.id}
+                tags={doc.tags}
+                votes={doc.votes}
+                answers={doc.answers}
+                title={doc.title}
+                date={doc.date}
+                category={doc.category}
+                author={doc.author}
+              />
+            ))}
       </Wrapper>
     </BaseLayout>
   );
@@ -69,6 +106,7 @@ Home.getInitialProps = async (ctx) => {
     });
   return {
     threads: threads,
+    sort: sort,
   };
 };
 

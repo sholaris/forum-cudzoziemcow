@@ -51,7 +51,7 @@ export async function getStaticProps({ params }) {
     .doc(params.id)
     .collection("answers");
   const query2 = await answersRef
-    .orderBy("date", "desc")
+    .orderBy("votes", "desc")
     .get()
     .then((snapshot) => {
       snapshot.docs.forEach((doc) => {

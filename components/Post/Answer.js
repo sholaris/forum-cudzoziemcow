@@ -35,7 +35,8 @@ const Answer = (props) => {
     // showing text editor for comment if user is logged in
     e.preventDefault();
     if (user) {
-      document.getElementById(`${props.ans_id}`).style.display = "block";
+      document.getElementById(`comment-form-${props.ans_id}`).style.display =
+        "block";
     } else {
       document.querySelector(`#login-msg-${props.ans_id}`).style.display =
         "block";
@@ -45,7 +46,7 @@ const Answer = (props) => {
   function hideAnswerCommentForm(e) {
     // hiding text editor for comment
     e.preventDefault();
-    const form = document.getElementById(`${props.ans_id}`);
+    const form = document.getElementById(`comment-form-${props.ans_id}`);
     form.style.display = "none";
   }
 
@@ -112,7 +113,10 @@ const Answer = (props) => {
             />
           ))}
         </div>
-        <div className="answer-comment-form" id={props.ans_id}>
+        <div
+          className="answer-comment-form"
+          id={`comment-form-${props.ans_id}`}
+        >
           <Row>
             <h2>Twój komentarz do tego pytania:</h2>
           </Row>

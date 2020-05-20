@@ -2,8 +2,8 @@ import { Menu } from "semantic-ui-react";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-const Filters = () => {
-  const [active, setActive] = useState({ activeItem: "Najnowsze" });
+const Filters = ({ method }) => {
+  const [active, setActive] = useState({ activeItem: method });
   const { activeItem } = active;
 
   function handleItemClick(e, { name }) {
@@ -19,7 +19,7 @@ const Filters = () => {
           id="recent"
           onClick={handleItemClick}
           name="Najnowsze"
-          active={activeItem == "Najnowsze"}
+          active={activeItem == "date"}
         />
 
         <Menu.Item
@@ -32,7 +32,7 @@ const Filters = () => {
           <Menu.Item
             id="votes"
             onClick={handleItemClick}
-            active={activeItem == "Najwięcej głosów"}
+            active={activeItem == "stats.votes"}
             name="Najwięcej głosów"
           >
             Najwięcej głosów
@@ -43,6 +43,7 @@ const Filters = () => {
             id="answers"
             onClick={handleItemClick}
             name="Najwięcej odpowiedzi"
+            active={activeItem == "stats.answers"}
           >
             Najwięcej odpowiedzi
           </Menu.Item>

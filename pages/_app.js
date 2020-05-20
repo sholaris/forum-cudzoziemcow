@@ -7,6 +7,7 @@ import "../public/css/Filters.css";
 import "../public/css/Thread.css";
 import "../public/css/LoginForm.css";
 import "../public/css/RegistryForm.css";
+import "../public/css/Categories.css";
 import "../public/css/Questionaire.css";
 import "../public/css/Post.css";
 import "../public/css/Votes.css";

@@ -2,7 +2,12 @@ import Head from "next/head";
 import Navigation from "../shared/Navigation";
 import Footer from "../shared/Footer";
 
-const BaseLayout = ({ children, title = "Forum cudzoziemców" }) => {
+const BaseLayout = ({
+  children,
+  title = "Forum cudzoziemców",
+  handleSearch,
+  handleChange,
+}) => {
   return (
     <div>
       <Head>
@@ -21,7 +26,7 @@ const BaseLayout = ({ children, title = "Forum cudzoziemców" }) => {
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
       </Head>
-      <Navigation />
+      <Navigation handleSearch={handleSearch} handleChange={handleChange} />
       <React.Fragment>{children}</React.Fragment>
       <Footer />
     </div>

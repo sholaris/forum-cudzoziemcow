@@ -2,8 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import firebaseApp from "../../firebase/_Init";
 
-const Navigation = () => {
+const Navigation = ({ handleSearch, handleChange }) => {
   const [user, setUser] = useState(null);
+  // const [search, setSearch] = useState("");
 
   function setupUI(cred) {
     const loggedOutLinks = document.querySelector(".logged-out");
@@ -31,6 +32,10 @@ const Navigation = () => {
         alert("Error occurs: ", err);
       });
   }
+
+  // function handleChange(e) {
+  //   setSearch(e.target.value);
+  // }
 
   useEffect(() => {
     let usersRef = firebaseApp.firestore().collection("users");
@@ -83,8 +88,13 @@ const Navigation = () => {
         </ul>
         <div className="search-bar">
           <form>
-            <input name="search" type="text" placeholder="Szukaj..."></input>
-            <button className="btn-search" type="submit">
+            <input
+              name="search"
+              type="text"
+              placeholder="Szukaj..."
+              onChange={handleChange}
+            />
+            <button className="btn-search" type="submit" onClick={handleSearch}>
               <FontAwesomeIcon icon={["fas", "search"]} />
             </button>
           </form>

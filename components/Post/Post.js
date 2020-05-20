@@ -110,9 +110,9 @@ const Post = (props) => {
           <form>
             <span className="meta-container">
               <span className="meta">
-                pytanie zadane <span className="when">{props.date}</span>
-                <span className="where"> w {props.category} </span>
-                <span className="who">przez {props.author}</span>
+                pytanie zadane <span className="when">{props.date}</span> w{" "}
+                <span className="where">{props.category} </span>przez{" "}
+                <span className="who">{props.author}</span>
               </span>
             </span>
             <div className="inner-content">

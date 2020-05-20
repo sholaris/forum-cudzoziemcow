@@ -60,13 +60,15 @@ const Questionaire = () => {
   return (
     <div className="form-container">
       <Row className="heading">
-        <h3 className="reg-heading"></h3>
+        <h3 className="reg-heading">
+          Przed zadaniem pytania wykonaj następujące czynności:
+        </h3>
         <ul>
           <li>
             <p>
-              Przed zadaniem pytania upewnij się, że Twój problem nie został już
-              rozwiązany lub nie zostało zadane podobne pytanie -
-              <strong>użyj wyszukiwarki</strong>.
+              Upewnij się, że Twój problem nie został już rozwiązany lub nie
+              zostało zadane podobne pytanie -<strong>użyj wyszukiwarki</strong>
+              .
             </p>
           </li>
           <li>
@@ -77,8 +79,9 @@ const Questionaire = () => {
           </li>
           <li>
             <p>
-              Wybierz odpowiednią <strong>kategorię</strong> - po wybraniu
-              każdej z nich zobaczysz opis pomagający dokonać wyboru.
+              Wybierz odpowiednią <strong>kategorię</strong> - szczegółowy opis
+              każdej z nich znajdziesz w{" "}
+              <a href="/categories">specjalnym spisie</a>.
             </p>
           </li>
           <li>

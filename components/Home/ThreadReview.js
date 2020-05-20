@@ -47,9 +47,9 @@ const ThreadReview = (props) => {
         </Link>
 
         <p className="details">
-          pytanie zadane <span className="thread-review">{props.date}</span> w{" "}
-          <span className="thread-review">{props.category}</span> przez{" "}
-          <span className="thread-review">{author}</span>{" "}
+          pytanie zadane <span className="when">{props.date}</span> w{" "}
+          <span className="where">{props.category}</span> przez{" "}
+          <span className="who">{author}</span>{" "}
         </p>
         <div className="tags-container">
           {tags.map((tag) => (
