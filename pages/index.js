@@ -6,13 +6,11 @@ import Separator from "../components/shared/Separator";
 import Wrapper from "../components/shared/Wrapper";
 import firebaseApp from "../firebase/_Init";
 import { convertDate } from "../lib/utils";
-import { useRouter, useState } from "react";
+import { useState } from "react";
 
 const Home = ({ threads, sort }) => {
   const [posts, setPosts] = useState([]);
   const [search, setSearch] = useState("");
-  // const router = useRouter();
-  // const { q } = router.query;
 
   function handleChange(e) {
     setSearch(e.target.value);

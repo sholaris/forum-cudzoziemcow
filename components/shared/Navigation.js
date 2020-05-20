@@ -4,7 +4,6 @@ import firebaseApp from "../../firebase/_Init";
 
 const Navigation = ({ handleSearch, handleChange }) => {
   const [user, setUser] = useState(null);
-  // const [search, setSearch] = useState("");
 
   function setupUI(cred) {
     const loggedOutLinks = document.querySelector(".logged-out");
@@ -32,10 +31,6 @@ const Navigation = ({ handleSearch, handleChange }) => {
         alert("Error occurs: ", err);
       });
   }
-
-  // function handleChange(e) {
-  //   setSearch(e.target.value);
-  // }
 
   useEffect(() => {
     let usersRef = firebaseApp.firestore().collection("users");
