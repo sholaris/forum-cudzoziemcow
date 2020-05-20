@@ -56,8 +56,10 @@ span.label {
 .details {
   margin: 5px 0;
 }
-span.thread-review {
-  color: rgb(56, 80, 187);
+span.where,
+span.when,
+span.who {
+  color: rgb(46, 70, 175);
   font-weight: 700;
 }
 .tags-container {

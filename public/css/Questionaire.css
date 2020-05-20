@@ -1,10 +1,20 @@
 .row {
   margin: 0;
 }
+.row.heading {
+  color: rgb(94, 94, 94) !important;
+}
+.row.heading a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 .row.heading ul {
   padding-left: 30px;
 }
-
+h3.reg-heading {
+  margin-top: 20px;
+  font-family: "Cardo", serif;
+}
 .row.heading ul > li {
   list-style-type: disc;
   margin: 10px 0;

@@ -1,0 +1,31 @@
+.content.cat-list {
+  padding: 20px 50px;
+}
+.categories-list {
+  margin: 0;
+}
+.category-item {
+  border-bottom: 1px solid #ecf0f1;
+  padding: 5px;
+  position: relative;
+  color: rgb(80, 80, 80);
+}
+.new.badge.category-link {
+  color: white;
+  height: 28px;
+  line-height: 30px;
+  border-radius: 0;
+  display: block;
+  float: left !important;
+  background-color: rgb(214, 91, 19);
+}
+.clear {
+  clear: both;
+}
+.category-desc {
+  font-family: "Cambria", serif;
+  display: block;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  line-height: 1.7em;
+}
