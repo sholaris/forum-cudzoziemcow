@@ -20,13 +20,6 @@ const Filters = ({ method }) => {
           name="Najnowsze"
           active={activeItem == "date"}
         />
-
-        <Menu.Item
-          id="active"
-          onClick={handleItemClick}
-          active={activeItem == "Aktywne"}
-          name="Aktywne"
-        />
         <Link href={{ pathname: "/", query: { sort: "votes" } }} passHref>
           <Menu.Item
             id="votes"

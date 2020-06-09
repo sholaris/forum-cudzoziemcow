@@ -146,11 +146,11 @@ const RegistryForm = () => {
             <p className="agreement-desc">
               Celem podania danych osobowych jest umożliwienie użytkownikowi
               swobodnego korzystania z własnego indywidualnego konta w serwisie.
-              Administratorem danych będzie ........,
-              kontakt@sprawadlaimigranta.pl z siedzibą ............ W każdej
-              chwili możesz wycofać udzieloną zgodę, uzyskać dostęp do swoich
-              danych, poprawić je lub usunąć. Podanie danych jest dobrowolne ale
-              konieczne do posiadania ważnego konta w seriwise.
+              Administratorem danych będzie strona Forum Cudzoziemców,
+              kontakt@sprawadlaimigranta.pl. W każdej chwili możesz wycofać
+              udzieloną zgodę, uzyskać dostęp do swoich danych, poprawić je lub
+              usunąć. Podanie danych jest dobrowolne ale konieczne do posiadania
+              ważnego konta w seriwise.
             </p>
           </Row>
 
