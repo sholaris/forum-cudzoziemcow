@@ -76,8 +76,8 @@ const Answer = (props) => {
       <div className="answer-main">
         <span className="meta-container">
           <span className="meta">
-            pytanie zadane <span className="when">{props.date}</span>
-            <span className="who">przez {props.author}</span>
+            odpowiedź udzielona <span className="when">{props.date}</span> przez
+            <span className="who"> {props.author}</span>
           </span>
         </span>
         <div className="answer-content" id={props.ans_id}></div>

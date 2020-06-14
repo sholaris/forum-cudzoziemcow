@@ -25,8 +25,8 @@ const AnswerComment = (props) => {
       <div className="comment-container">
         <span className="meta-container">
           <span className="meta">
-            komentarz dodany <span className="when">{props.date}</span>
-            <span className="who"> przez {props.author}</span>
+            komentarz dodany <span className="when">{props.date}</span> przez
+            <span className="who"> {props.author}</span>
           </span>
         </span>
         <div className="comment-content" id={props.id}></div>
